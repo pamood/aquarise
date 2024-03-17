@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+    font-size: 62.5%;
+
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: absolute;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo {
+    height: 15rem;
+  }
+
+
+
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #157aa0;
+    text-shadow: 0 0 7px #d0e4ec, 0 0 10px #b9d7e3, 0 0 21px #a1cad9,
+      0 0 42px #8abdd0;
+  }
+  
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #157aa0;
+  }
+  
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color: #0a2844;
+    text-shadow: none;
+    color: #d0e4ec;
+  }
+  
+  .sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 9.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(197, 211, 222, 0.4);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  }
+
+
+/* main-image */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/img/extracontent/main.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#banner h4{
+    color:antiquewhite;
+    font-size: 95px;
+    position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.15em antiquewhite;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    padding-top: 10vh;
+
+}
+
+#banner h2{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.txtcontainer{
+    color: #0a2844;
+    margin: 60px 90px 60px 90px;
+    align-items: center;
+}
+.txtcontainer h2{
+    font-size: 14px;
+}
+
+.txtcontainer li{
+    font-size: 12px;
+    line-height: 25px;
+}
+
+  .location-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 50%;
+    max-width: 600px; /* add this to limit the width on larger screens */
+    margin: 0 auto; /* add this to center horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  iframe {
+    height: 300px; /* update this value to match the desired height */
+    width: 100%;
+    
+  }
+
+  .css-slideshow{
+  position: relative;
+  max-width: 900px;
+  height: 500px;
+  margin: 50px 270px 50px 270px;
+}
+.css-slideshow figure{
+  margin: 0;
+  max-width: 900px;
+  height:500px;
+  background: #000;
+  position: absolute;
+}
+.css-slideshow img{
+  box-shadow: 0 0 2px #666;
+}
+.css-slideshow figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: 12px;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow figcaption strong{
+    font-size: 12px;
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+    color: #666;
+  }
+  
+  .css-slideshow figure{
+    opacity: 0;
+  }
+  
+  figure:nth-child(1) {
+    animation: xfade 15s 0s infinite;
+  }
+  
+  figure:nth-child(2) {
+    animation: xfade 15s 5s infinite;
+  }
+  
+  figure:nth-child(3) {
+    animation: xfade 15s 10s infinite;
+  }
+  
+  figure:nth-child(4) {
+    animation: xfade 15s 15s infinite;
+  }
+  
+  @keyframes xfade{
+    0%{
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+

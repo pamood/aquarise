@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+	font-family: 'Quicksand'; 
+	
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+	
+	
+}
+.container img {
+	max-width: 100%;
+	height: auto;
+	width: 20%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top:-100px ; 
+
+	
+	
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+	margin: 20px;
+	max-width: 200px;
+	text-align: center;
+	backdrop-filter: blur(30px);
+	
+	
+}
+.card img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+	
+}
+.card h2{
+	font-size: 14px;
+	color: #0a2844;;
+}
+.card p{
+	margin: 1px;
+	padding:2px;
+	font-size:12px;
+	color: #0a2844;
+}
+.card p.id{
+	margin-bottom: 20px;
+}

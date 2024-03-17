@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <script src="https://kit.fontawesome.com/0d7a978bd0.js" crossorigin="anonymous"></script>
+	<script src="validation.js" async></script>
+    <link rel="stylesheet" href="general.css">
+	<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+	<!-- header start -->
+    <header class="header">
+        <a href="#">
+          <img class="logo" alt="Aquarise logo" src="img/img/aquarise.png">
+        </a>
+    </header>
+	<!-- header end -->
+
+	<!-- form start -->
+	<form id="form">
+		<div class="stdcontainor cont1">
+			<div class="top">
+				<h3>ORDER SUMMERY</h3>
+				<div class="cart-total">
+					<strong class=element>Refferance: </strong>
+					<span class="answer">70990990000000989880000</span><br>
+					<strong class=element>Description: </strong>
+					<span class="answer">makepayment</span><br>
+					<strong class=element>Ammount(GBP): </strong>
+					<span class="answer" id="total-amount"></span>
+				</div>
+			</div>
+		</div>
+		<div class="stdcontainor cont2">
+			<div class="left">
+				<h3>BILLING ADDRESS</h3>
+				<div class="form-control">
+					<label>Full Name<span class="required">*</span></label>
+					<input type="text" placeholder="Enter full name" id="name"  >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Error message</small>
+				</div>
+
+				<div class="form-control">
+					<label>Email<span class="required">*</span></label>
+					<input type="email" placeholder="example@aquarise.com" id="email"  >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Error message</small>
+				</div>
+
+		
+
+
+				<div class="form-control">
+					<label>Address<span class="required">*</span></label>
+					<input type="text" placeholder="Enter Address line 1" id="address" >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small class ="address-line-1">Error message</small>
+				</div>
+				<input type="text" placeholder="Enter Address line 2 (optional)"  >
+		
+				<div class="form-control">
+					<label>City<span class="required">*</span></label>
+					<input type="text" placeholder="Enter City" id="city" >
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small class ="address-line-1">Error message</small>
+				</div>
+					
+				<div id="zip-1" class="zip">
+					<label class ="drop-down">
+						State<span class="required">*</span>
+						<select>
+							<option>Choose State..</option>
+							<option>Rajasthan</option>
+							<option>Hariyana</option>
+							<option>Uttar Pradesh</option>
+							<option>Madhya Pradesh</option>
+						</select>
+					</label>
+					<label class ="drop-down">
+						Zip code<span class="required">*</span>
+						<input type="number" name="" placeholder="Zip code">
+					</label>
+				</div>
+			</div>
+		
+			<div class="right">
+				<h3>PAYMENT</h3>
+					Accepted Card <br>
+					<img src="img/img/pay/card1.png" alt="visa" width="100">
+					<img src="img/img/pay/card2.png" alt="mastercard" width="50">
+					<br><br>
+
+					<div class="form-control">
+						<label>Credit card number<span class="required">*</span></label>
+						<input type="text" placeholder="xxxx xxxx xxxx xxxx" id="cardNumber" >
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div>
+
+					<div id="zip-2" class="zip">
+						<label class ="drop-down">
+							Exp month<span class="required">*</span>
+							<select>
+								<option>Choose month..</option>
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</label>
+						<label class ="drop-down">
+							Exp <span class="required">*</span>
+							<select>
+								<option>Choose Year..</option>
+								<option>2022</option>
+								<option>2023</option>
+								<option>2024</option>
+								<option>2025</option>
+							</select>
+						</label>
+							<label class ="drop-down">
+							CVV<span class="required">*</span>
+							<input type="number" name="" placeholder="CVV">
+						</label>
+					</div>
+				
+				<input type="submit" value="Submit">
+			</div>
+		</div>
+	</form>
+	<!-- form end -->
+
+	<!-- footer start -->
+	<div class="pgFooter" >
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png" alt="visa">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_master.png" alt="master">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png" alt="paypal">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_unionpay.png" alt="unionpay">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_linepay.png" alt="linepay">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png" alt="711">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png" alt="fm">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_taishin.png" alt="taishin">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_amex.png" alt="amex">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_ecpay.png" alt="ecpay">
+		<img height="40" src="https://shoplineimg.com/assets/footer/card_jcb.png" alt="jcb">
+	  </div>
+	  	<!-- footer end -->
+</body>
+
+</html>
+
